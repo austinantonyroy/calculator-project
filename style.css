@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121e1c; /* Slightly darker background */
+}
+
+/* Calculator Container */
+.calculator {
+    background-color: #0f1515;
+    width: 340px;
+    padding: 15px;
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    position: relative; /* Needed for display overlay */
+    border-radius: 15px;
+    padding-top: 200px; /* Adjusted to prevent overlap */
+}
+
+/* Display Screen */
+.display {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0c302e;
+    color: #ffffff;
+    text-align: right;
+    padding: 20px;
+    font-size: 2.2em;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow-x: auto;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+
+}
+
+/* Button Grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Button Styling */
+.button {
+    background-color: #0c1f1d;
+    color: #cedada;
+    border: none;
+    width: 70px;
+    height: 70px;
+    font-size: 1.6em;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #0c1f1d;
+    transform: scale(1.05);
+}
+
+/* Special Buttons */
+.ac { 
+    background-color: #2f4962; 
+    color: #ffffff;
+}
+
+.ac:hover { 
+    background-color: #3a5f7a;
+}
+
+.equals { 
+    background-color: #00514b; 
+    color: #00ffff;
+}
+
+.equals:hover { 
+    background-color: #00726a;
+}
+
+.function { 
+    background-color: #0c1f1d; 
+    color: #ffffff;
+}
+
+.button1 {
+    background-color: #0f1515;
+    color: #bec7c6;
+    border: none;
+    width: 60px;
+    height: 70px;
+    font-size: 1.6em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button2 {
+    background-color: #324b48;
+    color: #cbe5e2;
+    border: none;
+    width: 70px;
+    height: 70px;
+    font-size: 1.6em;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buttons1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3px;
+}
+
+.buttons2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+#display {
+    width: 100%;  /* Ensures it takes full width */
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow-x: auto; /* Enables horizontal scrolling */
+    text-align: right; /* Aligns text to the right */
+    font-size: 2rem; /* Adjust the font size */
+    padding: 10px;
+}
+
